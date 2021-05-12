@@ -1,0 +1,18 @@
+CREATE DATABASE bd_blog character set utf8 collate utf8_general_ci; 
+
+USE bd_blog; 
+
+CREATE TABLE usuarios( 	
+            id int(11) unsigned auto_increment not null primary key, 	
+            usuario varchar(20), 	
+            password varchar(255)	
+            
+);
+
+CREATE TABLE posts( 	
+            id int(11) unsigned auto_increment not null primary key, 	
+            fecha date, 	
+            titulo varchar(100),
+            contenido text	
+            
+);
